@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Email" value="sam@gmail.com"/>
+    <parameter name="Password" value="12345678"/>
+    <classes>
+      <class name="org.testng.Login">
+        <methods>
+          <include name="beforeAllTc"/>
+          <include name="afterAllTc"/>
+          <include name="tc12" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- org.testng.Login -->
+      <class name="org.testng.Selecting2">
+        <methods>
+          <include name="tc6"/>
+          <include name="afterTc"/>
+          <include name="beforeAllTc"/>
+          <include name="afterAllTc"/>
+          <include name="tc5"/>
+          <include name="beforeTc"/>
+        </methods>
+      </class> <!-- org.testng.Selecting2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
